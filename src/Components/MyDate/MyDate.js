@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React from "react";
+import "./MyDate.css";
 const MyDate = (props) => {
   return (
     <div className="date">
