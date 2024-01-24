@@ -1,19 +1,16 @@
 import React from "react";
 import "./LogItem.css";
-import data from "../../data.js";
 import MyDate from "../MyDate/MyDate.js";
-const LogItem = () => {
-  return data.map((item) => {
+const LogItem = (props) => {
     return (
-      <div className="item" key={item.id}>
-        <MyDate date={item.date}/>
+      <div className="item">
+        <MyDate date={props.data.date}/>
         <div className="content">
-          <h2 className="desc">{item.desc}</h2>
-          <div className="time">{item.time}分钟</div>
+          <h2 className="desc">{props.data.desc}</h2>
+          <div className="time">{props.data.time}分钟</div>
         </div>
       </div>
     );
-  });
 };
 
 export default LogItem;
