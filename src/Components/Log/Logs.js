@@ -2,13 +2,14 @@
 import LogItem from "./LogItem";
 import './Logs.css';
 import data from "../../data";
+import Card from "../UI/Card";
 const Logs = () => {
   return (
-    <div className="logs">
+    <Card className="logs">
       {data.map((item) => (
-        <LogItem data={item}/>
+        <LogItem data={item} key={item.id}/>
       ))}
-    </div>
+    </Card>
   );
 };
 export default Logs;

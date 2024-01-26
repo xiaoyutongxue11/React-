@@ -1,5 +1,6 @@
 /* 设置基本样式 */
 * {
+  overflow: hidden;
   box-sizing: border-box;
   /* 设置了之后想要多大的盒子，直接指定就行 */
 }
