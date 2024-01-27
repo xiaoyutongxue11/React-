@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../UI/Card/Card";
 import "./LogsForm.css";
-import { useState } from "react"; 
+import { useState } from "react";
 const LogsForm = () => {
   const [inputDate, setInputDate] = useState("");
   const [inputDesc, setInputDesc] = useState("");
