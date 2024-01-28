@@ -27,7 +27,7 @@ const App = () => {
     setLogsData([newLog, ...logsData]);
   };
   return (
-    <div>
+    <div className="app">
       <LogsForm onAddLog={addLogHandler} />
       <Logs logsData={logsData} />
     </div>

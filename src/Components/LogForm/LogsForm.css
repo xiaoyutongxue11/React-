@@ -3,6 +3,7 @@
   margin: 30px auto;
   background-color: #eae287;
   padding: 10px;
+  overflow: hidden;
 }
 .logs-item {
   height: 40px;
@@ -14,9 +15,10 @@
 }
 .logs-item label {
   padding: 0 10px;
+  overflow: hidden;
 }
 .logs-item input {
-  flex: auto;
+  width: 90%;
   margin-right: 10px;
   font-size: medium;
   outline: none;
@@ -34,7 +36,7 @@
   border: none;
   color: white;
 }
-.logs-btn button:hover{
-    background-color: darkorange;
-    transition: .3s;
+.logs-btn button:hover {
+  background-color: darkorange;
+  transition: 0.3s;
 }
