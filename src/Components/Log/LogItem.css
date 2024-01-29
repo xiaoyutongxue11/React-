@@ -16,3 +16,14 @@
 .time {
   color: red;
 }
+.delete{
+  color: white;
+  font-size: large;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+.delete:hover{
+  color: red;
+  transform: rotate(1turn);
+}

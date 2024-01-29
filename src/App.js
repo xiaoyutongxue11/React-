@@ -26,10 +26,15 @@ const App = () => {
     newLog.id = new Date();
     setLogsData([newLog, ...logsData]);
   };
+  const deleteLog = (id) => {
+    setLogsData((prevState) => {
+      return [...prevState].filter((item) => item.id !== id);
+    });
+  };
   return (
     <div className="app">
       <LogsForm onAddLog={addLogHandler} />
-      <Logs logsData={logsData} />
+      <Logs logsData={logsData} onDeleteLog={deleteLog}/>
     </div>
   );
 };

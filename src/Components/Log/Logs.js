@@ -6,7 +6,11 @@ const Logs = (props) => {
   return (
     <Card className="logs">
       {props.logsData.map((item) => (
-        <LogItem data={item} key={item.id} />
+        <LogItem
+          data={item}
+          key={item.id}
+          onDeleteLog={() => props.onDeleteLog(item.id)}
+        />
       ))}
     </Card>
   );

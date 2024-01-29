@@ -17,6 +17,10 @@ const LogsForm = (props) => {
   };
   const formSubmit = (e) => {
     e.preventDefault();
+    if (inputDate === "" || inputDesc === "" || inputTime === "") {
+      alert("记录信息不完整，无法进行添加操作");
+      return;
+    }
     const logData = {
       date: new Date(inputDate),
       desc: inputDesc,
