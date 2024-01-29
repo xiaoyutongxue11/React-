@@ -4,3 +4,8 @@
   padding: 20px;
   background-color: #eae287;
 }
+.nullData {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
