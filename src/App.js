@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Logs from "./Components/Log/Logs";
 import LogsForm from "./Components/LogForm/LogsForm";
-import ConfirmModal from "./Components/UI/ConfirmModal/ConfirmModal";
 const App = () => {
   const [logsData, setLogsData] = useState([
     {
@@ -34,7 +33,6 @@ const App = () => {
   };
   return (
     <div className="app">
-      <ConfirmModal />
       <LogsForm onAddLog={addLogHandler} />
       <Logs logsData={logsData} onDeleteLog={deleteLog} />
     </div>
